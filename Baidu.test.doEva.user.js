@@ -1,8 +1,10 @@
 // ==UserScript==
 // @name         Baidu.test.doEva
-// @version      0.1
-// @description  百度众测-答题按数字键提交
-// @author       Tan
+// @name:zh-CN   百度众测任务辅助
+// @description  Baidu.test.doEva Help
+// @description:zh-cn  百度众测任务-答题按数字键提交
+// @version      1.1
+// @author       Tan Keung
 // @match        http://test.baidu.com/crowdtesteva/eva/doEva/eva_id/*
 // @grant        none
 // ==/UserScript==
