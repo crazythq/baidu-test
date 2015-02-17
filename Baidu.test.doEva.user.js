@@ -13,7 +13,6 @@
 // @namespace          https://github.com/crazythq/userscripts
 // ==/UserScript==
 
-var num = '';//key name
 
 //引入jQuery
 if(!$){
@@ -23,6 +22,9 @@ if(!$){
     document.head.appendChild(scriptNode);
 }
 
+console.log("Baidu.test.doEva script start.");
+
+var num = '';//key name
 //捕获键盘按键
 function keyUp(e) {   
     var currKey=0,e=e||event;   
