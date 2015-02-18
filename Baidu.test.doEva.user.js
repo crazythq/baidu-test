@@ -74,19 +74,7 @@ function keyUp(e) {
     //店铺经营内容标注
     $('.multi-item:eq('+ ( num -1 ) +')').click();
     
-    var question = $('.question-example a:first').html();
-    if(question){
-        //图片对对碰(旅游)
-        if( question.indexOf('旅')>0 || question.indexOf('游')>0 ){
-            $('.mb5:eq(1)').find('.checkbox_check_no').click();//选2
-        }
-        //图片对对碰(加盟)
-        if( question.indexOf('加盟')>0 ){
-            $('.mb5:eq(2)').find('.checkbox_check_no').click();//选3
-        }
-    }
-    
-    //提交
+    //enter提交
     if(currKey==13){
         $('#next_eva').click();
     }
@@ -94,6 +82,18 @@ function keyUp(e) {
 
 document.onkeyup = keyUp;//注册按键事件
 
+
+var question = $('.question-example a:first').html();
+if(question){
+    //图片对对碰(旅游)
+    if( question.indexOf('旅')>0 || question.indexOf('游')>0 ){
+        $('.mb5:eq(1)').find('.checkbox_check_no').click();//选2
+    }
+    //图片对对碰(加盟)
+    if( question.indexOf('加盟')>0 ){
+        $('.mb5:eq(2)').find('.checkbox_check_no').click();//选3
+    }
+}
 
 //添加序号
 $('.checkbox_check_no').each(function(k,v){
