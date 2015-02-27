@@ -2,7 +2,7 @@
 // @name               Baidu.test.doEva
 // @name:zh-CN         百度众测任务辅助
 // @description        Baidu.test.doEva Help
-// @description:zh-cn  百度众测任务-答题按数字键提交
+// @description:zh-cn  百度众测任务-答题按数字键提交(自用版)
 // @version            1.2
 // @author             Tan Keung
 // @match              http://test.baidu.com/crowdtesteva/eva/doEva/eva_id/*
@@ -109,8 +109,7 @@ $('iframe').height($('iframe').height()+100);//增加iframe高度
 
 $('.mb5:eq(0)').find('.checkbox_check_no').click();//默认选择第一项
 
-//滚动到底部
-$('body').scrollTop($('.pro-content').offset().top);
+$('body').scrollTop($('.pro-content').offset().top);//滚动到底部
 
 //-----------------------------------------------------------------------------
 
